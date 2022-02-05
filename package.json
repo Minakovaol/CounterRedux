@@ -1,6 +1,6 @@
 {
   "name": "counter-redux",
-  "homepage": "https,://minakovaol.github.io/CounterRedux/",
+  "homepage": "https://minakovaol.github.io/CounterRedux/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
