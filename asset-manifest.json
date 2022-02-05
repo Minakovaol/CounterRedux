@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/https,://minakovaol.github.io/CounterRedux/static/css/main.9978ccf7.css",
-    "main.js": "/https,://minakovaol.github.io/CounterRedux/static/js/main.2e42cecb.js",
-    "index.html": "/https,://minakovaol.github.io/CounterRedux/index.html",
-    "main.9978ccf7.css.map": "/https,://minakovaol.github.io/CounterRedux/static/css/main.9978ccf7.css.map",
-    "main.2e42cecb.js.map": "/https,://minakovaol.github.io/CounterRedux/static/js/main.2e42cecb.js.map"
+    "main.css": "/CounterRedux/static/css/main.9978ccf7.css",
+    "main.js": "/CounterRedux/static/js/main.2e42cecb.js",
+    "index.html": "/CounterRedux/index.html",
+    "main.9978ccf7.css.map": "/CounterRedux/static/css/main.9978ccf7.css.map",
+    "main.2e42cecb.js.map": "/CounterRedux/static/js/main.2e42cecb.js.map"
   },
   "entrypoints": [
     "static/css/main.9978ccf7.css",
