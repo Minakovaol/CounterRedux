@@ -1,8 +1,7 @@
-
 .containerDisplay {
-    border: 20px solid #636383;
+    border: 20px solid goldenrod;
     height: 300px;
-    width:400px;
+    width: 400px;
     border-radius: 35px;
 }
 
@@ -12,14 +11,6 @@
 }
 
 .value {
-    color: #3d1a5c;
+    color: black;
     font-size: 40px;
 }
-
-/*
-.button {
-    margin: 5px;
-    font-size: 25px;
-    line-height: 1.5;
-    border-radius: 10px;
-}*/

@@ -17,9 +17,7 @@ export const saveState = (state: AppStateType) => {
         const serializedState = JSON.stringify(state);
         localStorage.setItem('currentState', serializedState);
     } catch {
-        // ignore write errors
     }
 };
 
-//логика сохранения еще есть в файле store
 

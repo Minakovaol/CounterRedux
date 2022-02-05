@@ -13,7 +13,6 @@ type DisplayType = {
 }
 export const Display: React.FC<DisplayType> = props => {
     const {
-
         increment,
         value,
         startValue,
@@ -23,7 +22,6 @@ export const Display: React.FC<DisplayType> = props => {
     } = props
     const mode = useSelector<AppStateType>(state => state.counter.mode)
 
-
     const importance = (
         inCorrect ? "Incorrect value" : `Enter values and enter "set"`
     )
@@ -32,7 +30,6 @@ export const Display: React.FC<DisplayType> = props => {
         <div className={'containerDisplay'}>
             <h3 className={maxValue === value ?
                 'valueError' : 'value'}>
-
                 {mode === 'settings' && importance}
                 {mode === 'counter' && value}
             </h3>

@@ -5,7 +5,6 @@ enum ACTION_TYPE {
     SET = "SET",
     SET_MAX_VALUE = "SET-MAX-VALUE",
     SET_START_VALUE = "SET-START-VALUE",
-
 }
 
 type ActionsType =
@@ -16,13 +15,13 @@ type ActionsType =
     ReturnType<typeof SetStartValueAC> |
     ReturnType<typeof changeMode>
 
-
 export const initialState = {
     value: 0,
     maxValue: 1,
     startValue: 0,
     mode: 'counter'
 }
+
 export type InitialStateType = typeof initialState
 
 export const counterReducer = (state = initialState, action: ActionsType): InitialStateType => {
@@ -51,9 +50,7 @@ export const counterReducer = (state = initialState, action: ActionsType): Initi
                 ...state,
                 maxValue: action.maxValue
             }
-
         case "SET-START-VALUE":
-
             return {
                 ...state,
                 startValue: action.startValue
@@ -81,6 +78,7 @@ export const ResetAC = (value: number) => {
         value,
     } as const
 }
+
 export const SetAC = (startValue: number, maxValue: number) => {
     return {
         type: ACTION_TYPE.SET,
@@ -102,6 +100,7 @@ export const SetStartValueAC = (startValue: number) => {
         startValue,
     } as const
 }
+
 export const changeMode = (mode: 'settings' | 'counter') => {
     return {
         type: ACTION_TYPE.CHANGE_MODE,

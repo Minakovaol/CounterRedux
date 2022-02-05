@@ -12,9 +12,7 @@ type SettingsType = {
     startValueHandler: (startValue: number) => void
     set: (startValue: number, maxValue: number) => void
     inCorrect: boolean
-
 }
-
 
 export const Settings: React.FC<SettingsType> = props => {
     const {
@@ -24,7 +22,6 @@ export const Settings: React.FC<SettingsType> = props => {
         inCorrect,
         startValue,
         maxValue,
-
     } = props;
 
     const dispatch = useDispatch()
@@ -42,30 +39,23 @@ export const Settings: React.FC<SettingsType> = props => {
     return (
         <div className={"containerSettings"}>
             <h3>MaxValue</h3>
-
             <input type={"number"}
                    value={maxValue}
                    onChange={onChangeMaxValueHandler}
                    className={inCorrect ? 'error' : 'input'}
             />
-
-
             <h3>StartValue</h3>
-
             <input type={"number"}
                    value={startValue}
                    onChange={onChangeStartValueHandler}
                    className={inCorrect ? 'error' : 'input'}/>
-
             <SettingsOfButton
                 set={set}
                 inCorrect={inCorrect}
                 startValue={startValue}
                 maxValue={maxValue}
-
             />
         </div>
-
     );
 };
 
